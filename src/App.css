@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+/* Menu component */
+nav {
+  background-color: #333;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  display: inline;
+  margin-right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+li a:hover {
+  color: #ffd700;
+}
+
+/* AddProduct.css */
+
+.add-product-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-product-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.add-product-form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-product-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
+
+.add-product-form button:hover {
+  background-color: #ffd700;
+}
+
+/* ProductDetails.css */
+
+.product-details-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details-heading {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.product-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #555;
+}
+
+/* DisplayProducts.css */
+
+.products-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.product-link:hover {
+  color: #ffd700;
+}
+
+
